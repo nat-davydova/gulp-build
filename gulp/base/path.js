@@ -7,7 +7,7 @@ exports.path = {
         svgCommon: './src/assets/icons/**/*',
         svgSolid: './src/assets/icons/icons-solid/*.svg',
         svgColored: './src/assets/icons/icons-colored/*.svg',
-        movedAssets: [
+        moveAssets: [
             './src/assets/fonts/**/*',
             './src/assets/favicon/**/*'
         ]
@@ -20,7 +20,10 @@ exports.path = {
         img: './build/assets/img/',
         svgSolid: './build/assets/sprites/sprites-solid',
         svgColored: './build/assets/sprites/sprites-colored',
-        movedAssets: './build/assets'
+        moveAssets: [
+            './build/assets/fonts',
+            './build/assets/favicon'
+        ]
     },
 
     clean: './build'

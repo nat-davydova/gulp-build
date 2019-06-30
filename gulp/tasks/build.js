@@ -5,6 +5,6 @@ const { scss } = require('./scss');
 const { scripts } = require('./scripts');
 const { imgRebase } = require('./img');
 const { svgSpriteColored, svgSpriteSolid } = require('./sprites');
-const {movedAssets} = require('./moveAssets');
+const {moveAssets} = require('./moveAssets');
 
-exports.build = parallel(pug, scss, scripts, imgRebase, svgSpriteSolid, svgSpriteColored, movedAssets);
+exports.build = parallel(pug, scss, scripts, imgRebase, svgSpriteSolid, svgSpriteColored, moveAssets);

@@ -6,7 +6,7 @@ const { scss } = require('./scss');
 const { scripts } = require('./scripts');
 const { imgRebase } = require('./img');
 const { svgSpriteColored, svgSpriteSolid } = require('./sprites');
-const {movedAssets} = require('./moveAssets');
+const {moveAssets} = require('./moveAssets');
 
 const server = browserSync.create();
 
@@ -31,7 +31,7 @@ const watchScss = () => watch(path.src.scss, series(scss, reload));
 const watchScripts = () => watch(path.src.scripts, series(scripts, reload));
 const watchImg = () => watch(path.src.img, series(imgRebase, reload));
 const watchSprites = () => watch(path.src.svgCommon, series(parallel(svgSpriteColored, svgSpriteSolid), reload));
-const watchAssets = () => watch(path.src.movedAssets, series(movedAssets, reload));
+const watchAssets = () => watch(path.src.moveAssets, series(moveAssets, reload));
 
 exports.watch = series(serverInit, parallel(watchHtml, watchScss, watchScripts, watchImg, watchSprites, watchAssets));
 

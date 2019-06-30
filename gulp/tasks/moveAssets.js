@@ -1,9 +1,13 @@
 const { src, dest } = require('gulp');
 const { path } = require('../base/path');
 
-exports.moveAssets = function () {
+exports.moveAssets = function (done) {
 
-	return src(path.src.movedAssets)
-		.pipe(dest(path.dist.movedAssets))
+	path.src.moveAssets.forEach((item, index) => {
+		return src(item)
+			.pipe(dest(path.dist.moveAssets[index]))
+	});
+
+	done();
 
 };
