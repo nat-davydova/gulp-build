@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.sample = void 0;
 
 var sample = function sample() {
-  console.log('Modules are compiled properly too!');
+  console.log('Modules are compiled properly too! =)');
 };
 
 exports.sample = sample;
