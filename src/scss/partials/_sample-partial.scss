@@ -1,0 +1,9 @@
+//sample partial
+
+h1 {
+  color: blue;
+
+  &:after {
+	content: '=)';
+  }
+}
