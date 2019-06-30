@@ -20,6 +20,6 @@
 ## How to use:
 
 - extract folder in your project
-- install all the packages via `npm install`
+- install all the packages via `npm install` command
 - run watcher and live server with `gulp` command
 - on the **build** stage you can use `gulp img-min` command and start better images optimization via TinyPng API (you need a key to proceed the task). This task is optional, you can just not use it if you don't need it.
