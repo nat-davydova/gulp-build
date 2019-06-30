@@ -6,7 +6,11 @@ exports.path = {
         img: './src/assets/img/**/*.{jpg,png,jpeg,svg}',
         svgCommon: './src/assets/icons/**/*',
         svgSolid: './src/assets/icons/icons-solid/*.svg',
-        svgColored: './src/assets/icons/icons-colored/*.svg'
+        svgColored: './src/assets/icons/icons-colored/*.svg',
+        movedAssets: [
+            './src/assets/fonts/**/*',
+            './src/assets/favicon/**/*'
+        ]
     },
 
     dist: {
@@ -15,7 +19,8 @@ exports.path = {
         scripts: './build/scripts',
         img: './build/assets/img/',
         svgSolid: './build/assets/sprites/sprites-solid',
-        svgColored: './build/assets/sprites/sprites-colored'
+        svgColored: './build/assets/sprites/sprites-colored',
+        movedAssets: './build/assets'
     },
 
     clean: './build'
