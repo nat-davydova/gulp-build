@@ -4,7 +4,7 @@ const pug = require('gulp-pug');
 
 exports.pug = function () {
 
-    return src('./src/pug/**.pug')
+    return src(path.src.pug)
         .pipe(pug({
             doctype: 'html'
         }))
