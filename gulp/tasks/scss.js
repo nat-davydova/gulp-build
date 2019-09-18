@@ -4,7 +4,8 @@ const scss = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
-const cssmin = require('gulp-cssmin');
+//const cssmin = require('gulp-cssmin');
+const cssmin = require('gulp-clean-css');
 const rename = require('gulp-rename');
 
 exports.scss = function () {
