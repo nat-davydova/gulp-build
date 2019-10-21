@@ -1,6 +1,7 @@
 exports.path = {
     src: {
-        pug: './src/pug/**/*.pug',
+        pugToWatch: './src/pug/**/*.pug',
+        pugToCompile: './src/pug/*.pug',
         scss: './src/scss/**/*.scss',
         scripts: './src/scripts/',
         img: './src/assets/img/**/*.{jpg,png,jpeg,svg}',

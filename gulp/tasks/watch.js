@@ -26,7 +26,7 @@ function reload(done) {
     done();
 }
 
-const watchHtml = () => watch(path.src.pug, series(pug, reload));
+const watchHtml = () => watch(path.src.pugToWatch, series(pug, reload));
 const watchScss = () => watch(path.src.scss, series(scss, reload));
 const watchScripts = () => watch(path.src.scripts + '**/*.js', series(scripts, reload));
 const watchImg = () => watch(path.src.img, series(imgRebase, reload));
