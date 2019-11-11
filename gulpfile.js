@@ -6,8 +6,8 @@ const { build } = require('./gulp/tasks/build');
 
 const { imgMin } = require('./gulp/tasks/img');
 
-task('default', series(cleanBuild, build, watch));
-
 task('build', series(cleanBuild, build));
+
+task('default', series(cleanBuild, build, watch));
 
 task('img-min', imgMin);

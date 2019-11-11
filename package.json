@@ -39,5 +39,6 @@
     "plugins": [
       "@babel/plugin-transform-runtime"
     ]
-  }
+  },
+  "browserslist": ["> 5%"]
 }

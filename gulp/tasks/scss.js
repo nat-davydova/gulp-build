@@ -19,7 +19,6 @@ exports.scss = function () {
         .pipe(autoprefixer({
             flexbox: true,
             grid: true,
-            browsers: ['> 1%', 'last 5 years', 'Firefox > 20']
         }))
         .pipe(sourcemaps.write())
         .pipe(dest(path.dist.styles))
