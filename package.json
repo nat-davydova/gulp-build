@@ -30,6 +30,7 @@
     "gulp-svgmin": "^2.2.0",
     "gulp-tinypng-compress": "^1.2.5",
     "gulp-uglify-es": "^2.0.0",
+    "standard": "^14.3.3",
     "vinyl-source-stream": "^2.0.0"
   },
   "babel": {
