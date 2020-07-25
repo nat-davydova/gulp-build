@@ -16,6 +16,7 @@
   - 2 tasks for sprites building (depends on type of SVG icon - colored or solid)
 - Live server, watching
 - Other assets handling task (fonts/favicons/etc)
+- JS linter [Standard](https://standardjs.com/) added
   
 ## How to use:
 
